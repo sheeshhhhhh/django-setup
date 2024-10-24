@@ -73,6 +73,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pos.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = [
+    # for origin and csrf_token in the forms ilagay mo lang url na binigay ng marscode
+    # example
+    'https://in4m01bv-dnr6j2ey-bo3pqpcpj6a8.ac4-preview.marscode.dev'
+]
+ALLOWED_HOSTS = [
+    # dito din website name lang
+    # name of the website with https
+    "https://in4m01bv-dnr6j2ey-bo3pqpcpj6a8.ac4-preview.marscode.dev", 
+    # with no https
+    "in4m01bv-dnr6j2ey-bo3pqpcpj6a8.ac4-preview.marscode.dev"
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
